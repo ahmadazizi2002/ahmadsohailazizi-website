@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AhmadSohail Azizi | Yazılım Mühendisi</title>
+    <meta name="description" content="-AhmadSohail Azizi Portföyü: Projelerim, Becerilerim, İletişim ve Özgeçmiş." />
+    <meta name="theme-color" content="#0ea5e9" />
+    <link rel="icon" href="/assets/Logo copy.svg" />
+    <!-- Tailwind CSS CDN (no build tools needed) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      // Tailwind config
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'ui-sans-serif', 'system-ui', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', 'Apple Color Emoji','Segoe UI Emoji']
+            }
+          }
+        },
+        darkMode: 'class'
+      }
+    </script>
+    <style>
+      html { scroll-behavior: smooth; }
+    </style>
+  </head>
+  <body class="bg-white text-slate-800 dark:bg-slate-900 dark:text-slate-100">
+    <!-- Navbar -->
+    <header class="fixed inset-x-0 top-0 z-50 backdrop-blur bg-white/70 dark:bg-slate-900/70 border-b border-slate-200/60 dark:border-slate-700/60">
+      <div class="mx-auto max-w-6xl px-4">
+        <div class="flex items-center justify-between h-16">
+          <a href="#" class="flex items-center gap-2 font-semibold">
+            <img src="assets/Logo copy.svg" alt="Logo" class="h-6 w-6">
+            <span>Azizi.Soft</span>
+          </a>
+          <nav class="hidden md:flex items-center gap-6 text-sm">
+            <a href="#home" class="hover:text-sky-600">Anasayfa</a>
+            <a href="#about" class="hover:text-sky-600">Hakkımda</a>
+            <a href="#skills" class="hover:text-sky-600">Beceriler</a>
+            <a href="#projects" class="hover:text-sky-600">Projeler</a>
+             <a href="#Sertifikalar" class="hover:text-sky-600">Sertifikalarım</a>
+            <a href="#contact" class="hover:text-sky-600">İletişim</a>
+            <a href="assets/CV Ahmad Sohail Azizi Güncel (1).pdf" class="inline-flex items-center gap-2 rounded-full border px-3 py-1.5 hover:bg-sky-50 dark:hover:bg-slate-800">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v12m0 0l-3-3m3 3l3-3M6 20h12"/></svg>
+              CV
+            </a>
+          </nav>
+          <div class="flex items-center gap-2">
+            <button id="themeToggle" class="rounded-full p-2 hover:bg-slate-100 dark:hover:bg-slate-800" aria-label="Tema">
+              <svg id="iconSun" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 hidden dark:inline" viewBox="0 0 20 20" fill="currentColor"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm0 13a5 5 0 100-10 5 5 0 000 10zm7-6a1 1 0 100 2h1a1 1 0 100-2h-1zM2 10a1 1 0 100 2H1a1 1 0 100-2h1zm14.657 5.657a1 1 0 10-1.414 1.414l.707.707a1 1 0 001.414-1.414l-.707-.707zM4.05 4.05a1 1 0 011.414 0l.708.707A1 1 0 014.758 6.17L4.05 5.464a1 1 0 010-1.414zM4.05 15.95a1 1 0 010 1.414l.708.707A1 1 0 106.17 16.95l-.707-.707a1 1 0 00-1.414 0zM15.95 4.05a1 1 0 000 1.414l.707.707A1 1 0 0018.07 4.05l-.707-.707a1 1 0 00-1.414 0z"/></svg>
+              <svg id="iconMoon" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 dark:hidden" viewBox="0 0 20 20" fill="currentColor"><path d="M17.293 13.293A8 8 0 016.707 2.707 8.001 8.001 0 1017.293 13.293z"/></svg>
+            </button>
+            <button id="menuBtn" class="md:hidden rounded-full p-2 hover:bg-slate-100 dark:hover:bg-slate-800" aria-label="Menü">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+            </button>
+          </div>
+        </div>
+        <div id="mobileNav" class="md:hidden hidden pb-4">
+          <nav class="flex flex-col gap-2 text-sm">
+            <a href="#home" class="py-2">Anasayfa</a>
+            <a href="#about" class="py-2">Hakkımda</a>
+            <a href="#skills" class="py-2">Yetenekler</a>
+            <a href="#projects" class="py-2">Projeler</a>
+            <a href="#contact" class="py-2">İletişim</a>
+            <a href="assets/cv.pdf" class="py-2">Özgeçmiş</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section id="home" class="pt-28 pb-16">
+      <div class="mx-auto max-w-6xl px-4 grid md:grid-cols-2 gap-10 items-center">
+        <div>
+          <span class="inline-block rounded-full border px-3 py-1 text-xs tracking-wide">Software Engineer • Full‑Stack Developer • .Net   </span>
+          <h1 class="mt-4 text-4xl md:text-5xl font-bold leading-tight">Merhaba, Ben Ahmad Sohail Azizi </h1>
+          <p class="mt-4 text-slate-600 dark:text-slate-300">Beykent Üniveristeden 2025 Yılında Yazılım Mühendisi olarak mezun oldum. Web Uygulaması Geliştirme ve Veritabanı Yönetimi konularında kendimi geliştirmekteyim. React ve React-Native öğrenerek kendimi ileriye taşımayı hedeflemekteyim.</p>
+          <p class="mt-4 text-slate-600 dark:text-slate-300">Java, C# ve Python gibi programlama dilleri üzerine çalışarak yazılım bilgimi genişletmeye devam etmekteyim.</p>
+          <p class="mt-4 text-slate-600 dark:text-slate-300">Bu website üzerinden CV'mi, Güncel Projelerimi ve ileride geliştireceğim uygulamaları bulabilirsiniz.</p>
+          <div class="mt-6 flex flex-wrap items-center gap-3">
+            <a href="#projects" class="inline-flex items-center gap-2 rounded-xl bg-sky-600 text-white px-5 py-2.5 hover:bg-sky-700">Projelerim</a>
+            <a href="#contact" class="inline-flex items-center gap-2 rounded-xl border px-5 py-2.5 hover:bg-slate-50 dark:hover:bg-slate-800">İletişime Geç</a>
+          </div>
+          <div class="mt-6 flex items-center gap-4 text-sm">
+            <a href="https://github.com/ahmadazizi2002" target="_blank" class="underline hover:no-underline">GitHub</a>
+            <a href="https://www.linkedin.com/in/ahmad-sohail-azizi-180506375" target="_blank" class="underline hover:no-underline">LinkedIn</a>
+            <a href="mailto:azizisohail20@outlook.com" class="underline hover:no-underline">E‑posta</a>
+          </div>
+        </div>
+        <div class="relative">
+          <div class="absolute -inset-4 bg-sky-100/60 dark:bg-sky-900/20 rounded-3xl blur-xl"></div>
+          <img src="assets/foto.jpg" alt="Hero" class="relative rounded-3xl w-full h-auto shadow-xl ring-1 ring-slate-900/5">
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-16 bg-slate-50 dark:bg-slate-800/30">
+      <div class="mx-auto max-w-6xl px-4 grid md:grid-cols-2 gap-10 items-center">
+        <img src="assets/hakkımda.PNG" alt="About" class="rounded-3xl w-full h-auto shadow ring-1 ring-slate-900/5">
+        <div>
+          <h2 class="text-2xl font-semibold">Hakkımda</h2>
+          <p class="mt-3 text-slate-600 dark:text-slate-300">Yazılım alanında Full-Stack Developement ve Database Administration alanlarında kendimi daha güçlü ve bilgili hissediyorum. .Net odaklı bir Full-Stack geliştiricisiyim. Bugüne kadar birden çok profesyonel ve kişisel projeler geliştirdim. </p>
+          <ul class="mt-4 grid grid-cols-2 gap-2 text-sm">
+            <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-sky-600"></span> ASP.NET MVC / Web API</li>
+            <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-sky-600"></span> Javascript / Angular.js </li>
+            <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-sky-600"></span> MySQL / MSSQL</li>
+            <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-sky-600"></span> Docker</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="py-16">
+      <div class="mx-auto max-w-6xl px-4">
+        <h2 class="text-2xl font-semibold">Becerilerim</h2>
+        <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div class="rounded-2xl border p-5 hover:shadow-sm">
+            <h3 class="font-semibold">Backend</h3>
+            <p class="text-sm text-slate-600 dark:text-slate-300 mt-1">C#, .NET 9, EF Core, REST API</p>
+          </div>
+          <div class="rounded-2xl border p-5 hover:shadow-sm">
+            <h3 class="font-semibold">Frontend</h3>
+            <p class="text-sm text-slate-600 dark:text-slate-300 mt-1">HTML, CSS, BootStrap</p>
+          </div>
+          <div class="rounded-2xl border p-5 hover:shadow-sm">
+            <h3 class="font-semibold">Veritabanı</h3>
+            <p class="text-sm text-slate-600 dark:text-slate-300 mt-1">MySQL, MSSQL</p>
+          </div>
+          <div class="rounded-2xl border p-5 hover:shadow-sm">
+            <h3 class="font-semibold">Araçlar</h3>
+            <p class="text-sm text-slate-600 dark:text-slate-300 mt-1">Git, Docker, VS Code</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="py-16 bg-slate-50 dark:bg-slate-800/30">
+      <div class="mx-auto max-w-6xl px-4">
+        <div class="flex items-center justify-between">
+          <h2 class="text-2xl font-semibold">Projelerim</h2>
+          <a href="#projects" class="text-sm underline hover:no-underline">Tüm projeler</a>
+        </div>
+        <div class="mt-6 grid md:grid-cols-2 gap-6">
+          <!-- Project Card 1 -->
+          <article class="rounded-2xl border overflow-hidden hover:shadow-md transition">
+            <img src="assets/project1 background.png" alt="Proje 1" class="w-full h-48 object-cover">
+            <div class="p-5">
+              <h3 class="font-semibold">QR Kod Tabanlı Park Yönetim Sistemi</h3>
+              <p class="text-sm text-slate-600 dark:text-slate-300 mt-1">Java, Html, Css, Bootstrap, Apache NetBeans IDE23, MySQL </p>
+              <div class="mt-3 flex flex-wrap gap-2 text-xs">
+                <span class="rounded-full bg-slate-100 dark:bg-slate-800 px-2 py-1">Java</span>
+                <span class="rounded-full bg-slate-100 dark:bg-slate-800 px-2 py-1">EE API</span>
+                <span class="rounded-full bg-slate-100 dark:bg-slate-800 px-2 py-1">MySQL</span>
+                <span class="rounded-full bg-slate-100 dark:bg-slate-800 px-2 py-1">EE API</span>
+              </div>
+            </div>
+          </article>
+          <!-- Project Card 2 -->
+          <article class="rounded-2xl border overflow-hidden hover:shadow-md transition">
+            <img src="assets/project2 background.jpg" alt="Proje 2" class="w-full h-48 object-cover">
+            <div class="p-5">
+              <h3 class="font-semibold">Consulting Website</h3>
+              <p class="text-sm text-slate-600 dark:text-slate-300 mt-1">Html, Css, Javascript, React, Angular, vue, .net, node.js, Git</p>
+              <div class="mt-3 flex flex-wrap gap-2 text-xs">
+                <span class="rounded-full bg-slate-100 dark:bg-slate-800 px-2 py-1">HTML,CSS,Javascript</span>
+                <span class="rounded-full bg-slate-100 dark:bg-slate-800 px-2 py-1">React</span>
+                <span class="rounded-full bg-slate-100 dark:bg-slate-800 px-2 py-1">MySQL</span>
+                <span class="rounded-full bg-slate-100 dark:bg-slate-800 px-2 py-1">Angular</span>
+                <span class="rounded-full bg-slate-100 dark:bg-slate-800 px-2 py-1">.Net</span>
+                <span class="rounded-full bg-slate-100 dark:bg-slate-800 px-2 py-1">node.js</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Certificates -->
+    <section id="Sertifikalar" class="py-16 bg-slate-50 dark:bg-slate-800/30">
+      <div class="mx-auto max-w-6xl px-4">
+        <div class="flex items-center justify-between">
+          <h2 class="text-2xl font-semibold">Sertifikalarım</h2>
+          <a href="#Sertifikalar" class="text-sm underline hover:no-underline">Tüm Sertifikalar</a>
+        </div>
+        <div class="mt-6 grid md:grid-cols-2 gap-6">
+          <!-- Sertifika 1 -->
+          <article class="rounded-2xl border overflow-hidden hover:shadow-md transition">
+            <img src="assets/Yazılım Uzmanlığı.png" alt="Sertifika 1" class="w-full h-48 object-cover">
+            <div class="p-5">
+              <h3 class="font-semibold">Yazılım Uzmanlığı</h3>
+              <p class="text-sm text-slate-600 dark:text-slate-300 mt-1">UnityVerse Academy </p>
+              <div class="mt-3 flex flex-wrap gap-2 text-xs">
+                <span class="rounded-full bg-slate-100 dark:bg-slate-800 px-2 py-1">2024</span>
+                <a href="assets/Unityverse sertifika copy.JPG" class="inline-flex items-center gap-2 rounded-full border px-3 py-1.5 hover:bg-sky-50 dark:hover:bg-slate-800">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v12m0 0l-3-3m3 3l3-3M6 20h12"/></svg>
+              İndir
+            </a>
+              </div>
+            </div>
+          </article>
+          <!-- Sertifika 2 -->
+          <article class="rounded-2xl border overflow-hidden hover:shadow-md transition">
+            <img src="assets/Angular 7.png" alt="Proje 2" class="w-full h-48 object-cover">
+            <div class="p-5">
+              <h3 class="font-semibold">Angular7 for Begineers</h3>
+              <p class="text-sm text-slate-600 dark:text-slate-300 mt-1">Great Learning</p>
+              <div class="mt-3 flex flex-wrap gap-2 text-xs">
+                <span class="rounded-full bg-slate-100 dark:bg-slate-800 px-2 py-1">2025</span>
+                <a href="assets/Ahmad Sohail Azizi copy.pdf" class="inline-flex items-center gap-2 rounded-full border px-3 py-1.5 hover:bg-sky-50 dark:hover:bg-slate-800">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v12m0 0l-3-3m3 3l3-3M6 20h12"/></svg>
+              İndir
+            </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Sertifika 3 -->
+          <article class="rounded-2xl border overflow-hidden hover:shadow-md transition">
+            <img src="assets/Asp.net .png" alt="Proje 2" class="w-full h-48 object-cover">
+            <div class="p-5">
+              <h3 class="font-semibold">ASP.NET Core Course</h3>
+              <p class="text-sm text-slate-600 dark:text-slate-300 mt-1">Scholarhat</p>
+              <div class="mt-3 flex flex-wrap gap-2 text-xs">
+                <span class="rounded-full bg-slate-100 dark:bg-slate-800 px-2 py-1">2025</span>
+                <a href="assets/Asp.net copy.pdf" class="inline-flex items-center gap-2 rounded-full border px-3 py-1.5 hover:bg-sky-50 dark:hover:bg-slate-800">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v12m0 0l-3-3m3 3l3-3M6 20h12"/></svg>
+              İndir
+            </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Sertifika 4-->
+          <article class="rounded-2xl border overflow-hidden hover:shadow-md transition">
+            <img src="assets/sql.png" alt="Proje 2" class="w-full h-48 object-cover">
+            <div class="p-5">
+              <h3 class="font-semibold">Master Data Analytics With SQL</h3>
+              <p class="text-sm text-slate-600 dark:text-slate-300 mt-1">Great Learning</p>
+              <div class="mt-3 flex flex-wrap gap-2 text-xs">
+                <span class="rounded-full bg-slate-100 dark:bg-slate-800 px-2 py-1">2025</span>
+                <a href="assets/Ahmad Sohail Azizi-GreatLearning-SQL copy.pdf" class="inline-flex items-center gap-2 rounded-full border px-3 py-1.5 hover:bg-sky-50 dark:hover:bg-slate-800">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v12m0 0l-3-3m3 3l3-3M6 20h12"/></svg>
+              İndir
+            </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Sertifika 5-->
+          <article class="rounded-2xl border overflow-hidden hover:shadow-md transition">
+            <img src="assets/github.png" alt="Proje 2" class="w-full h-48 object-cover">
+            <div class="p-5">
+              <h3 class="font-semibold">GitHub Eğitimi</h3>
+              <p class="text-sm text-slate-600 dark:text-slate-300 mt-1">İstanbul Beykent Üniversitesi</p>
+              <div class="mt-3 flex flex-wrap gap-2 text-xs">
+                <span class="rounded-full bg-slate-100 dark:bg-slate-800 px-2 py-1">2024</span>
+                <a href="assets/2103013200 copy.pdf" class="inline-flex items-center gap-2 rounded-full border px-3 py-1.5 hover:bg-sky-50 dark:hover:bg-slate-800">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v12m0 0l-3-3m3 3l3-3M6 20h12"/></svg>
+              İndir
+            </a>
+              </div>
+            </div>
+          </article>
+
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="mx-auto max-w-3xl px-4 text-center">
+        <h2 class="text-2xl font-semibold">İletişim</h2>
+        <p class="mt-3 text-slate-600 dark:text-slate-300">Referanslarım hakkında bilgi almak veya benimle iletişime geçmek için lütfen bana bu mail adresinden ulaşın</p>
+        <div class="bg-white dark:bg-gray-800 rounded-lg p-4 sm:p-6 shadow-md hover:shadow-lg transition-shadow" 
+        style="opacity: 1; transform: none;"><div class="flex flex-col items-center text-center space-y-3 sm:space-y-4">
+          <div class="p-2 sm:p-3 bg-blue-100 dark:bg-blue-900 rounded-full">
+            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" 
+            class="text-blue-600 dark:text-blue-300 text-xl sm:text-2xl" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+            <path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 
+            48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 
+            39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 
+            102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 
+            173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 
+            7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path>
+            </svg>
+      </div>
+        <h3 class="text-base sm:text-lg font-semibold text-gray-900 dark:text-white">Email</h3>
+        <a href="mailto:azizisohail20@outlook.com"
+           class="text-sm sm:text-base text-blue-600 dark:text-blue-400 hover:underline focus:outline-none
+                  focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:focus:ring-offset-gray-900
+                  rounded-md px-2 py-1">
+                  azizisohail20@outlook.com
+        </a>
+      </div>
+    </div>
+      </div>
+    </section>
+
+    <footer class="py-8 border-t border-slate-200/60 dark:border-slate-700/60">
+      <div class="mx-auto max-w-6xl px-4 flex flex-col md:flex-row items-center justify-between gap-4 text-sm">
+        <p>© <span id="year"></span>-AhmadSohail Azizi. Tüm hakları saklıdır.</p>
+        <div class="flex items-center gap-4">
+          <a href="#" class="underline hover:no-underline">Gizlilik</a>
+          <a href="#contact" class="underline hover:no-underline">İletişim</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Year + theme
+      document.getElementById('year').textContent = new Date().getFullYear();
+      const root = document.documentElement;
+      const themeBtn = document.getElementById('themeToggle');
+      const mobileBtn = document.getElementById('menuBtn');
+      const mobileNav = document.getElementById('mobileNav');
+
+      function applyTheme(t){
+        if(t==='dark'){ root.classList.add('dark'); localStorage.setItem('theme','dark'); }
+        else { root.classList.remove('dark'); localStorage.setItem('theme','light'); }
+      }
+      applyTheme(localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark':'light'));
+
+      themeBtn.addEventListener('click', ()=>{
+        const isDark = root.classList.contains('dark');
+        applyTheme(isDark ? 'light':'dark');
+      });
+      mobileBtn.addEventListener('click', ()=>{
+        mobileNav.classList.toggle('hidden');
+      });
+    </script>
+  </body>
+</html>
